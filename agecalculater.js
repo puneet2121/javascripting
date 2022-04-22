@@ -24,8 +24,13 @@ console.log(ageMike)
 function retirementAge(year,firstname){
     age = calculateAge(year);
     var retirement = 65 - age;  
-
-    console.log(firstname + ' will be retired in ' + retirement + ' year')
+    if (retirement > 0){
+        console.log(firstname + ' will be retired in ' + retirement + ' year')
+    }
+    else{
+        console.log("The person is already retired")
+    }
 }
 retirementAge(2010,'mike')
 retirementAge(1997,'Puneet')
+retirementAge(1890,'shh')
